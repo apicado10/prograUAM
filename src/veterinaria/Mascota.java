@@ -6,9 +6,10 @@ package veterinaria;
 
 /**
  *
- * @author anapicado
+ * @authoranapicado
  */
-public class Mascota {
+public class Mascota implements Resumible {
+    
     private String nombre;
     private String especie;
     private int edad;
@@ -64,6 +65,7 @@ public class Mascota {
         this.peso = peso;
     }
     
+    @Override
     public void mostrarResumen () {
         System.out.println("Mascota: " + nombre);
         System.out.println("Especie: " + especie);
@@ -83,9 +85,9 @@ public class Mascota {
         this.duenio = duenio;
     }
    
+
     
- 
-    
+  
 }
 
 
