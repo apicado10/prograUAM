@@ -9,6 +9,7 @@ package veterinaria;
  * @author anapicado
  */
 public class Cliente extends Persona {
+
     private String identificacion;
     private String telefono;
 
@@ -23,12 +24,12 @@ public class Cliente extends Persona {
     }
 
     public void setIdentificacion(String identificacion) {
-        if(identificacion == null || identificacion.trim() .equals("")) {
+        if (identificacion == null || identificacion.trim().equals("")) {
             System.out.println("La identificación no es válida");
         } else {
             this.identificacion = identificacion;
         }
-        
+
     }
 
     public String getNombre() {
@@ -36,20 +37,18 @@ public class Cliente extends Persona {
     }
 
     public void setTelefono(String telefono) {
-         if(telefono == null || telefono.trim() .equals("")) {
+        if (telefono == null || telefono.trim().equals("")) {
             System.out.println("El Teléfono no es válido");
         } else {
             this.telefono = telefono;
         }
     }
-    
-    
-    
-    
-    
+
+    @Override
+    public void mostrarResumen() {
+        System.out.println("Identificacion: " + identificacion);
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Telefono: " + telefono);
+    }
+
 }
-
-
-
-
-

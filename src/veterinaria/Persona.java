@@ -8,23 +8,23 @@ package veterinaria;
  *
  * @author anapicado
  */
-public abstract class Persona {
-    
+public abstract class Persona implements Resumible {
+
     protected String nombre;
-    
-    public Persona (String nombre) {
-     this.nombre = nombre;
+
+    public Persona(String nombre) {
+        this.nombre = nombre;
     }
-    
-    public Persona () {
-     this.nombre = "Sin Nombre";
+
+    public Persona() {
+        this.nombre = "Sin Nombre";
     }
-    
-     public String getNombre () {
+
+    public String getNombre() {
         return nombre;
     }
-     
-     public void setNombre (String nombre){
-     this.nombre = nombre;
-     }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 }
